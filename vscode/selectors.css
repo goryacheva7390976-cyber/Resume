@@ -1,0 +1,45 @@
+
+body {
+    background-color: greenyellow;
+        }
+
+h3 {
+    color: rgb(136, 127, 255);
+}
+
+/* Class */
+
+.card {
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px; 
+}
+
+.card p {
+    font-size: 22px;
+}
+
+
+
+.html {
+    background-color: #e55f28;
+    color: white;
+}
+
+.css {
+    background-color: blue;
+    color: white;
+}
+
+
+/* Id */
+
+#header {
+    background-color: green;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* #header, .html, .css, .card {
+    margin-bottom: 10px;
+} */

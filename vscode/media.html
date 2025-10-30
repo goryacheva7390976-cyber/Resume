@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        .container {
+            max-width: 750px;
+            padding-top: 20px;
+            margin: auto;
+        }
+
+        .box {
+            padding: 20px;
+            background-color: pink;
+            font-size: 2rem;
+        }
+
+        @media (max-width: 500px) {      /* если выполняется это условие: (max-width: < 500px  */
+            .box {                       /* тогда начинают действовать другие условия и другие стили  */   
+                font-size: 1.5rem;       /*  это адаптивный механизм  */
+                padding: 10px;
+                text-align: center;
+            }
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Это урок про адаптивную верстку
+        </div>
+    </div>
+</body>
+</html>

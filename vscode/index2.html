@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="selectors.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="borders.css">
+    <link rel="stylesheet" href="links.css">
+    <link rel="stylesheet" href="lists.css">
+    <link rel="stylesheet" href="display.css">
+    <link rel="stylesheet" href="positions.css">
+
+    <title>CSS Course</title>
+    <style>
+     body {
+            background-color: rgb(171, 193, 199);
+        } /* Порядок стилей имеет значение: приоритет стиля выше там, где он он указан последним, т.е. в файле selectors.css. Идет перетирание прежних стилей на новые. */
+
+     /* header {
+            border: 5px solid gold;
+        } */
+
+    </style>
+    
+</head>
+
+<body>
+
+<nav class="navbar">    <!-- nav.navbar -->
+    <ul>                                    <!-- ul>(li>a{Item $})*5 -->
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        <li><a href="#">Item 5</a></li>
+    </ul>
+</nav>          
+
+
+<header id="header" style="border: 5px solid blueviolet;">
+    <h3>Это очень крутой сайт!</h3>
+</header>
+
+<div class="card html">
+    <h2>HTML</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, temporibus!</p>
+</div>
+
+<div class="class">
+    <h2>Positions</h2>
+
+    <div class="playground">
+        <div class="pos-box"></div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Display</h2>
+
+    <ul class="inline">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, incidunt!
+    </div>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, incidunt!
+    </div>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, incidunt!
+    </div>
+
+    <img src="https://www.cnet.com/a/img/resize/b9b09bd80b3129a6a5da79d9bd17487b977c9677/hub/2014/10/27/40194e6e-2544-419e-a340-f7c17b2e83c5/html5-wow-image-w3c.jpg?auto=webp&width=768" alt="html" class="img">
+
+</div>
+
+<div class="card css">
+    <h2>CSS</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, temporibus!</p>
+</div>
+
+<div class="card">
+    <h2>Lists & Tables</h2>
+
+    <ul class="list">             <!-- ul>li(lorem2)*5 -->
+        <li>Lorem, ipsum.</li>
+        <li>Suscipit, iure.</li>
+        <li>Eos, molestiae.</li>
+        <li>Facere, neque?</li>
+        <li>Tempora, molestias.</li>
+    </ul>   
+</div>
+
+    <table class="table">          <!-- (tr>(td{$})*5)*6 -->
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+    </table>
+
+<div class="card">
+    <h2>Links & Buttons</h2>
+
+    <p>
+        <a href="#" class="btn">Это очень важная ссылка</a>
+    </p>
+
+    <p>
+        <button class="btn">Это кнопка</button>
+    </p>
+</div>
+
+<div class="card">
+    <h2>Colors</h2>
+
+    <h3 class="color-1">Color 1</h3>
+    <h3 class="color-2">Color 2</h3>
+    <h3 class="color-3">Color 3</h3>
+    <h3 class="color-4">Color 4</h3>
+    <h3 class="color-5">Color 5</h3>
+</div>
+
+<div class="card">
+    <h2>Borders</h2>
+
+    <p class=border-1>Lorem ipsum dolor sit amet.</p>
+    <p class=border-2>Lorem ipsum dolor sit amet.</p>
+    <p class=border-3>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<div class="circle"></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 8px;
+    border-bottom: 1px solid grey;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    text-align: center;
+
+}
+
+.table td:hover {              /* при наведении на элемент таблицы - меняется цвет фона элемента */
+    background: #eeefff;   
+}
+
+/* пусть каждая четная строка таблицы подсвечивается по-своему */
+
+/* .table tr:nth-child(even) {       
+    background-color: #eee;
+}  */    
+
+
+/* пусть каждая нечетная строка таблицы подсвечивается по-своему */
+
+.table tr:nth-child(odd) {       
+    background-color: #eee;
+}  
+
+
+/* пусть второй столбик таблицы подсвечивается по-своему */
+
+/* .table td:nth-child(2) {       
+    background-color: #fffeee;
+}  */
+
+
+/* пусть второй и четвертый столбик таблицы подсвечивается по-своему */
+
+.table td:nth-child(2), .table td:nth-child(4) {       
+    background-color: #fffeee;
+}  
+
+.navbar {
+    background-color: lightcoral;
+    /*  padding: 10px 20px;  */      /* это внутренние отстуаы */  
+    margin-bottom: 10px;
+}
+
+.navbar ul {
+    list-style: none;   /* чтобы убрать точки в списке */
+    margin: 0px;
+    padding: 0px;
+    display: flex;  /* чтобы все ссылки расположились в одну горизонтальную линию, используем свойство display:flex */
+    padding: 0 20px;
+}
+
+.navbar ul li {     /* чтобы стилизовать каждый элемент в навигационном списке */
+    margin-right: 10px;
+    padding: 10px;
+
+}
+
+.navbar ul li:hover {
+    background-color: #ea6767;
+}
+
+.navbar ul li:last-child {      /*бывает еще и first-child */
+    margin-right: 0px;
+}

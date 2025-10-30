@@ -1,0 +1,35 @@
+.playground {
+ /* position: relative; */
+    position: relative;
+    border: 4px solid black;
+    height: 300px; 
+    padding: 20px;
+}
+
+.pos-box {
+ /*  position: static; */
+ /*  position: absolute; */  /* элемент позиционируется относительно родителя (Playground) */
+    position: fixed;
+ /*  left, top, right, bottom. */
+ /*  top: 0; */  /* при значении "abcolute", мы м. управлять локацией нашего элемента с помощью этих четырех свойств */
+ /*  left: 0; */
+ /*  top: opx; */
+ /*  top: 200px; */
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+.navbar {               /* это для навигации, которая постоянно находится наверху и при этом не затирает основной контент */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;  /* это свойствр показывает, на сколько слоев вверх смотрит какой-либо элемент */  /* чтобы некоторые элементы как бы не перетирались навигацией*/
+}
+
+#header {
+   margin-top: 50px; 
+}
